@@ -62,46 +62,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="top-header">
-            <div class="user">
-                <div class="top-left">
-                    <img src="" alt=""> 
-                    <h5>Privacy & Terms</h5>
+            <div class="user d-flex justify-content-between align-items-center pt-2">
+                <div class="top-left d-flex align-items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1920px-Google_2015_logo.svg.png" alt="Google Logo"> 
+                    <h5 class="ms-2">Privacy & Terms</h5>
                 </div>
                 <div class="top-right">
-                    <i></i>
-                    <img src="" alt="">
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-person-circle"></i>
                 </div>
             </div>
             <nav class="navigation">
                 <ul>
-                    <li>
-                        Overview
+                    <li><a href="">
+                        Overview</a>
                     </li>
-                    <li>
-                        Privacy Policy
+                    <li><a href="">
+                        Privacy Policy</a>
                     </li>
-                    <li>
-                        Terms of Service
+                    <li><a href="">
+                        Terms of Service</a>
                     </li>
-                    <li>
-                        Technologies
+                    <li><a href="">
+                        Technologies</a>
                     </li>
-                    <li>
-                        FAQ
+                    <li class="selected"><a href="">
+                        FAQ</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section>
+        <section class="container-lg mt-5">
 
     <?php
     foreach($FAQArray as $key => $FAQ){
